@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<!-- head -->
+	<div class="head">
+		<div class="container">
+			<div class="head__city">
+				<div class="head__city__label">Город:</div>
+				<a class="head__city__name" href="/">Казань</a>
+			</div>
+			<div class="head__loc">г. Казань,ул. Юлиуса Фучика, 90А эт. 8, каб. 827</div>
+			<a href="mailto:mng-2@alliance-ar.ru" class="head__email">mng-2@alliance-ar.ru</a>
+			<a href="tel:8 800 600-14-08" class="head__phone">8 800 600-14-08</a>
+			<button class="btn__small__border">Заказать обратный звонок</button>
+		</div>
+	</div>
+	<!-- head -->
+	
+	<!-- navbar -->
+	<div class="navbar">
+		<div class="container">
+			<a href="/" class="navbar__logo">
+				<img src="img/logo.png" alt="">
+			</a>
+			<ul class="navbar__links">
+				<li><a href="/">Сертификация</a></li>
+				<li><a href="/">Штрих кодирование</a></li>
+				<li><a href="/">Охрана труда</a></li>
+				<li><a href="/">Лаборатория</a></li>
+				<li><a href="/">О нас</a></li>
+				<li><a href="/">Контакты</a></li>
+			</ul>
+			<button class="navbar__search">
+				<img src="img/search.svg" alt="">
+			</button>
+		</div>
+	</div>
+	<!--END navbar -->
+	{% block content %}
+		
+	{% endblock %}
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

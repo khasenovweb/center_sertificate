@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic');
+@green: #398c6d;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	outline: none;
+}
+a {
+	color: @green;
+}
+button {
+	cursor: pointer;
+}
+.btn__small__border {
+	padding: 5px 12px;
+	font-size: 11px;
+	border-radius: 5px;
+	border: none;
+	background-color: @green;
+	color: white;
+	font-weight: 400;
+}
+.container {
+	max-width: 1238px;
+	margin: 0 auto;
+}
+
+.head {
+	padding: 7px 0;
+	* {
+		font-size: 12px;
+	}
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+.head__city {
+	display: flex;
+	align-items: center;
+}
+.head__city__label {
+	color: #423e3e;
+}
+.head__city__name {
+	font-weight: bold;
+	text-decoration: underline;
+	margin-left: 5px;
+}
+.head__loc {
+	font-weight: 400;
+}
+.head__email {
+	font-weight: 400;
+	color: black;
+}
+.head__phone {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.navbar {
+	background-color: @green;
+	//height: 54px;
+	.container {
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+}
+.navbar__links {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin-left: auto;
+	a {
+		color: white;
+		padding: 20px 30px;
+		font-size: 14px;
+		font-weight: 400;
+	}
+}
+.navbar__logo {
+	background-color: white;
+	display: inline-block;
+	padding: 6px 26px 8px 26px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 0 0 2px 2px;
+	//margin-bottom: -10px;
+}
+.navbar__search {
+	border: none;
+	padding: 17px 30px;
+	background-color: @green;
+	img {
+		width: 18px;
+		height: auto;
+		margin-bottom: -3px;
+	}
+}
+
+
+.hero {
+	background-image: url(../img/hero__bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 41px 0;
+	.container {
+		display: grid;
+		grid-template-columns: auto 406px;
+		grid-gap: 26px;
+	}
+	* {
+		color: white;
+	}
+}
+.hero__text {
+	align-self: center;
+	.btn__big__shadow {
+		margin-top: 33px;
+	}
+}
+.hero__img {
+	align-self: center;
+}
+.hero__title {
+	font-size: 48px;
+	font-weight: 700;
+	color: white;
+	text-transform: uppercase;
+	line-height: 56px;
+	margin-top: -30px;
+}
+.hero__desc {
+	margin-top: 20px;
+	font-size: 18px;
+	font-weight: 400;
+}
+.btn__big__shadow {
+	color: white;
+	padding: 17px 34px;
+	background-color: @green;
+	border: none;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	box-shadow: 0 5px 0 0 #2c7258;
+}

@@ -1,0 +1,227 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'), url(https://fonts.gstatic.com/s/opensans/v17/memnYaGs126MiZpBA-UFUKWyV9hvIqY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v17/mem6YaGs126MiZpBA-UFUK0ddcg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url(https://fonts.gstatic.com/s/opensans/v17/memnYaGs126MiZpBA-UFUKXGUdhvIqY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(https://fonts.gstatic.com/s/opensans/v17/memnYaGs126MiZpBA-UFUKWiUNhvIqY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url(https://fonts.gstatic.com/s/opensans/v17/memnYaGs126MiZpBA-UFUKW-U9hvIqY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OVuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFUZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOVuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOVuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN8rsOVuhs.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  outline: none;
+}
+a {
+  color: #398c6d;
+}
+button {
+  cursor: pointer;
+}
+.btn__small__border {
+  padding: 5px 12px;
+  font-size: 11px;
+  border-radius: 5px;
+  border: none;
+  background-color: #398c6d;
+  color: white;
+  font-weight: 400;
+}
+.container {
+  max-width: 1238px;
+  margin: 0 auto;
+}
+.head {
+  padding: 7px 0;
+}
+.head * {
+  font-size: 12px;
+}
+.head .container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.head__city {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.head__city__label {
+  color: #423e3e;
+}
+.head__city__name {
+  font-weight: bold;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+.head__loc {
+  font-weight: 400;
+}
+.head__email {
+  font-weight: 400;
+  color: black;
+}
+.head__phone {
+  font-size: 18px;
+  font-weight: 700;
+}
+.navbar {
+  background-color: #398c6d;
+}
+.navbar .container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  position: relative;
+}
+.navbar__links {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  list-style: none;
+  margin-left: auto;
+}
+.navbar__links a {
+  color: white;
+  padding: 20px 30px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.navbar__logo {
+  background-color: white;
+  display: inline-block;
+  padding: 6px 26px 8px 26px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 0 2px 2px;
+}
+.navbar__search {
+  border: none;
+  padding: 17px 30px;
+  background-color: #398c6d;
+}
+.navbar__search img {
+  width: 18px;
+  height: auto;
+  margin-bottom: -3px;
+}
+.hero {
+  background-image: url(../img/hero__bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 41px 0;
+}
+.hero .container {
+  display: grid;
+  grid-template-columns: auto 406px;
+  grid-gap: 26px;
+}
+.hero * {
+  color: white;
+}
+.hero__text {
+  align-self: center;
+}
+.hero__text .btn__big__shadow {
+  margin-top: 33px;
+}
+.hero__img {
+  align-self: center;
+}
+.hero__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  line-height: 56px;
+  margin-top: -30px;
+}
+.hero__desc {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.btn__big__shadow {
+  color: white;
+  padding: 17px 34px;
+  background-color: #398c6d;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 5px 0 0 #2c7258;
+}
