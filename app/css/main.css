@@ -92,6 +92,9 @@ button {
   color: white;
   font-weight: 400;
 }
+.btn__small__border:hover {
+  background-color: #1c5741;
+}
 .container {
   max-width: 1238px;
   margin: 0 auto;
@@ -156,12 +159,17 @@ button {
           align-items: center;
   list-style: none;
   margin-left: auto;
+  height: 100%;
 }
 .navbar__links a {
   color: white;
-  padding: 20px 30px;
+  padding: 28px 30px;
   font-size: 14px;
   font-weight: 400;
+  line-height: 0;
+}
+.navbar__links a:hover {
+  background-color: #1c5741;
 }
 .navbar__logo {
   background-color: white;
@@ -176,6 +184,9 @@ button {
   border: none;
   padding: 17px 30px;
   background-color: #398c6d;
+}
+.navbar__search:hover {
+  background-color: #1c5741;
 }
 .navbar__search img {
   width: 18px;
@@ -233,10 +244,11 @@ button {
   transition: 0.1s;
 }
 .btn__big__shadow:active {
-  box-shadow: 0 2px 0 0 #2c7258;
-  -webkit-transform: translateY(3px);
-      -ms-transform: translateY(3px);
-          transform: translateY(3px);
+  box-shadow: 0 0px 0 0 #2c7258;
+  -webkit-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+          transform: translateY(5px);
+  background-color: #2c7258;
 }
 .section-title {
   font-size: 36px;
@@ -392,6 +404,10 @@ button {
   background: url(../img/prices__bg__left-1.png) 0% 45%, url(../img/prices__bg__left-2.png) bottom left, url(../img/prices__bg__right-1.png) top right, url(../img/prices__bg__right-2.png) right 80%, #e9f2eb;
   background-repeat: no-repeat;
 }
+.prices .btn__noborderradius {
+  max-width: 230px;
+  margin-top: 67px;
+}
 .section-desc {
   margin-top: 19px;
 }
@@ -422,6 +438,10 @@ button {
   -webkit-box-pack: end;
           justify-content: flex-end;
 }
+.prices__item .btn__noborderradius {
+  max-width: 180px;
+  width: 180px;
+}
 .prices__item__title {
   font-size: 18px;
   font-weight: 900;
@@ -444,6 +464,23 @@ button {
   text-align: center;
   color: white;
   margin-top: 5px;
+}
+.btn__noborderradius {
+  padding: 11px 20px;
+  display: block;
+  background-color: #398c6d;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 15px;
+  box-shadow: 0 6px 16px 4px rgba(9, 173, 112, 0.2);
+  cursor: pointer;
+}
+.btn__noborderradius:hover {
+  background-color: #1c5741;
+  box-shadow: none;
 }
 .prices__item__btn {
   padding: 11px 20px;
@@ -506,6 +543,12 @@ button {
 }
 .contacts__item.white .contacts__item__desc {
   margin-top: 7px;
+}
+.contacts__item .btn__noborderradius {
+  font-size: 14px;
+  margin-top: 17px;
+  display: inline-block;
+  text-transform: none;
 }
 .contacts__item__title {
   font-size: 24px;
@@ -975,4 +1018,62 @@ button {
   font-weight: 400;
   text-align: center;
   margin-top: 10px;
+}
+.page__head {
+  background-image: url(../img/page__head__bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 40px 0 50px 0;
+}
+.bredcrumbs {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+.bredcrumbs a {
+  color: #adbbb0;
+  font-size: 14px;
+}
+.bredcrumbs__separator {
+  color: #adbbb0;
+  margin: 0 5px;
+  font-size: 14px;
+}
+.page__head__title {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 10px;
+}
+.page__head__btnblock {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.page__head__btn {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 6px 16px 4px rgba(9, 173, 112, 0.2);
+  background-color: #398c6d;
+  padding: 16px 20px;
+  border: none;
+}
+.page__head__social {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.page__head__social a {
+  margin-left: 20px;
+  line-height: 0;
 }

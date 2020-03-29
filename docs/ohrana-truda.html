@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>{{ title }}</title>
+    <title>Центр сертификации | Главная</title>
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -17,14 +17,10 @@
                 <div class="head__city__label">Город:</div>
                 <a class="head__city__name" href="/">Казань</a>
             </div>
-            <div class="head__loc">
-                г. Казань,ул. Юлиуса Фучика, 90А эт. 8, каб. 827
-            </div>
+            <div class="head__loc"> г. Казань,ул. Юлиуса Фучика, 90А эт. 8, каб. 827 </div>
             <a href="mailto:mng-2@alliance-ar.ru" class="head__email">mng-2@alliance-ar.ru</a>
             <a href="tel:8 800 600-14-08" class="head__phone">8 800 600-14-08</a>
-            <button data-click-modal-open="call-order" class="btn__small__border">
-                Заказать обратный звонок
-            </button>
+            <button data-click-modal-open="call-order" class="btn__small__border"> Заказать обратный звонок </button>
         </div>
     </div>
     <!-- head -->
@@ -48,7 +44,32 @@
         </div>
     </div>
     <!--END navbar -->
-    {% block content %} {% endblock %}
+    <!-- page__head -->
+    <div class="page__head">
+        <div class="container">
+            <ul class="bredcrumbs">
+                <li><a href="/">Главная</a></li>
+                <li class="bredcrumbs__separator">/</li>
+                <li><a href="/">Охрана труда</a></li>
+            </ul>
+            <h1 class="page__head__title">Охрана труда</h1>
+            <div class="page__head__btnblock">
+                <button class="page__head__btn">Сохранить в закладки</button>
+                <div class="page__head__social">
+                    <a href="/">
+                        <img src="img/page__head__fb.png" alt="">
+                    </a>
+                    <a href="/">
+                        <img src="img/page__head__ok.png" alt="">
+                    </a>
+                    <a href="/">
+                        <img src="img/page__head__vk.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END page__head -->
     <!-- footer -->
     <div class="footer">
         <div class="container">
@@ -109,8 +130,7 @@
         <div class="modal">
             <div data-click-modal-close class="modal__close"></div>
             <div class="modal__title">Заказать звонок</div>
-            <div class="modal__desc">и наш менеджер свяжется с Вами проконсультирует
-                и поможет определиться с выбором сертификата</div>
+            <div class="modal__desc">и наш менеджер свяжется с Вами проконсультирует и поможет определиться с выбором сертификата</div>
             <form class="form" action="">
                 <div class="form__inputgroup">
                     <label for="">Введите Ваше имя:</label>
@@ -120,8 +140,7 @@
                     <label for="">Введите Ваш номер телефона:</label>
                     <input type="text" placeholder="+7 999 876-54-32">
                 </div>
-                <div class="form__politics">Нажимая на кнопку "отправить" Вы принимаете
-                    условия <a href="">политики конфинденциальности</a> </div>
+                <div class="form__politics">Нажимая на кнопку "отправить" Вы принимаете условия <a href="">политики конфинденциальности</a> </div>
                 <button class="btn__noborderradius">отправить</button>
             </form>
         </div>
@@ -129,8 +148,7 @@
     <div style="display: none;" class="modal__wrapper" data-modal="raschet">
         <div class="modal">
             <div data-click-modal-close class="modal__close"></div>
-            <div class="modal__title">Оставить заявку на
-                просчёт стоимости</div>
+            <div class="modal__title">Оставить заявку на просчёт стоимости</div>
             <form class="form" action="">
                 <div class="form__inputgroup">
                     <label for="">Введите Ваше имя:</label>
@@ -140,8 +158,7 @@
                     <label for="">Введите Ваш номер телефона:</label>
                     <input type="text" placeholder="+7 999 876-54-32">
                 </div>
-                <div class="form__politics">Нажимая на кнопку "отправить" Вы принимаете
-                    условия <a href="">политики конфинденциальности</a> </div>
+                <div class="form__politics">Нажимая на кнопку "отправить" Вы принимаете условия <a href="">политики конфинденциальности</a> </div>
                 <button class="btn__noborderradius">отправить</button>
             </form>
         </div>
