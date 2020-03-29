@@ -405,6 +405,7 @@ button {
   background-repeat: no-repeat;
 }
 .prices .btn__noborderradius {
+  margin: 0 auto;
   max-width: 230px;
   margin-top: 67px;
 }
@@ -441,6 +442,7 @@ button {
 .prices__item .btn__noborderradius {
   max-width: 180px;
   width: 180px;
+  margin-top: 15px;
 }
 .prices__item__title {
   font-size: 18px;
@@ -466,6 +468,7 @@ button {
   margin-top: 5px;
 }
 .btn__noborderradius {
+  border: none;
   padding: 11px 20px;
   display: block;
   background-color: #398c6d;
@@ -473,8 +476,6 @@ button {
   color: white;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 auto;
-  margin-top: 15px;
   box-shadow: 0 6px 16px 4px rgba(9, 173, 112, 0.2);
   cursor: pointer;
 }
