@@ -77,6 +77,14 @@
   outline: none;
   box-sizing: border-box;
 }
+body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  min-height: 100vh;
+}
 a {
   color: #398c6d;
 }
@@ -956,9 +964,15 @@ button {
   font-weight: bold;
   text-decoration: underline;
 }
+.footer__bottom__nav li a:hover {
+  color: white;
+}
 .footer__bottom__social a img {
   height: 16px;
   width: auto;
+}
+.footer__bottom__social a:hover svg path {
+  fill: white;
 }
 .modal__title {
   font-size: 26px;
@@ -1340,7 +1354,7 @@ p.page__textblock__title {
   font-size: 16px;
   font-weight: 700;
   padding: 20px 26px;
-  border: 1px solid #e9f2eb;
+  border: 1px solid #338264;
 }
 .page__tableblock__table tbody td {
   padding: 20px 26px;
@@ -1472,6 +1486,8 @@ p.page__textblock__title {
   padding: 40px 0;
   background: url(../img/search__bg-left.png) top left, url(../img/search__bg-right.png) top right, #e9f2eb;
   background-repeat: no-repeat;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
 }
 .search__title {
   color: #398c6d;
@@ -1522,7 +1538,7 @@ p.page__textblock__title {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 10px;
-  margin-bottom: 200px;
+  margin-bottom: 60px;
 }
 .link__404 {
   display: inline-block;

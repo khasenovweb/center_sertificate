@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     //Яндекс Карта
     ymaps.ready(init);
     var myMapAll;
@@ -6,13 +6,13 @@ $(document).ready(function() {
     function init() {
         myMapAll = new ymaps.Map("contacts__map", {
             center: [55.763356, 49.234954],
-            zoom: 10
+            zoom: 10,
         });
         var myPlacemark_1 = new ymaps.Placemark([55.763356, 49.234954], {
             balloonContentHeader: "Название объекта",
             balloonContentBody: "Описание объекта",
             balloonContentFooter: "",
-            hintContent: "Кликните для более подробной информации"
+            hintContent: "Кликните для более подробной информации",
         });
         myMapAll.geoObjects.add(myPlacemark_1);
     }
@@ -25,20 +25,20 @@ $(document).ready(function() {
         nav: true,
         navText: [
             '<img src="img/reviews_arrow_left.png">',
-            '<img src="img/reviews_arrow_right.png" >'
-        ]
+            '<img src="img/reviews_arrow_right.png" >',
+        ],
     });
     jQuery(".reviews__slider__item__dots").on(
         "click",
         ".reviews__slider__item__dot",
-        function(e) {
+        function (e) {
             owl.trigger("to.owl.carousel", [jQuery(this).index(), 300]);
         }
     );
 
     $("[data-faq-accordion-content]").slideUp();
 
-    $("[data-faq-accordion-link]").click(function() {
+    $("[data-faq-accordion-link]").click(function () {
         var id = $(this).attr("data-faq-accordion-link");
         $('[data-faq-accordion-content="' + id + '"]').slideToggle(200);
         $(
@@ -48,12 +48,12 @@ $(document).ready(function() {
         ).toggleClass("active");
     });
 
-    $("[data-click-modal-open]").click(function() {
+    $("[data-click-modal-open]").click(function () {
         var id = $(this).attr("data-click-modal-open");
         $('[data-modal="' + id + '"]').show();
     });
 
-    $("[data-click-modal-close]").click(function() {
+    $("[data-click-modal-close]").click(function () {
         $("[data-modal]").hide();
     });
 
@@ -65,19 +65,23 @@ $(document).ready(function() {
 
     page__head__pattern();
 
-    $(window).resize(function() {
+    $(window).resize(function () {
         page__head__pattern();
     });
 
     $(".page__textblock__slider").owlCarousel({
         items: 1,
-        dots: true
+        dots: true,
     });
 
-    $(".page__textblock__slider__item img").each(function(i, el) {
+    $(".page__textblock__slider__item img").each(function (i, el) {
         console.log(i, el);
         $(".page__textblock__slider .owl-dot")
             .eq(i)
             .html("<img src='" + $(el).attr("src") + "' alt=''>");
+    });
+
+    $(".footer__bottom__nav li svg path").mouseover(function () {
+        $(this).attr("fill", "white");
     });
 });
