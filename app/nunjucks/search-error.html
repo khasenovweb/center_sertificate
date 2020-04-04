@@ -1,0 +1,24 @@
+{% set title = 'Центр сертификации | Контакты' %} {% extends
+'layouts/_main.html' %} {% block content %}
+<!-- search -->
+<div class="search">
+    <div class="container">
+        <ul class="bredcrumbs">
+            <li><a href="/">Главная</a></li>
+            <li class="bredcrumbs__separator">/</li>
+            <li><a href="/">Контакты</a></li>
+        </ul>
+        <h1 class="search__title">Поиск</h1>
+        <form action="/" class="search__form">
+            <input class="search__form__input" type="text" />
+            <button class="btn__noborderradius">Поиск</button>
+        </form>
+        <div class="search__results">
+            <div class="search__results__title">Результаты поиска:</div>
+            <div class="search__results__error">Ничего не найдено</div>
+        </div>
+    </div>
+</div>
+<!--END search -->
+
+{% endblock %}

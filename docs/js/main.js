@@ -36,20 +36,48 @@ $(document).ready(function() {
         }
     );
 
-    $('[data-faq-accordion-content]').slideUp();
+    $("[data-faq-accordion-content]").slideUp();
 
-    $('[data-faq-accordion-link]').click(function() {
-        var id = $(this).attr('data-faq-accordion-link');
+    $("[data-faq-accordion-link]").click(function() {
+        var id = $(this).attr("data-faq-accordion-link");
         $('[data-faq-accordion-content="' + id + '"]').slideToggle(200);
-        $('[data-faq-accordion-link="' + id + '"] .faq__accordion__link__arrow').toggleClass('active');
+        $(
+            '[data-faq-accordion-link="' +
+                id +
+                '"] .faq__accordion__link__arrow'
+        ).toggleClass("active");
     });
 
-    $('[data-click-modal-open]').click(function() {
-        var id = $(this).attr('data-click-modal-open');
+    $("[data-click-modal-open]").click(function() {
+        var id = $(this).attr("data-click-modal-open");
         $('[data-modal="' + id + '"]').show();
     });
 
-    $('[data-click-modal-close]').click(function() {
-        $('[data-modal]').hide();
+    $("[data-click-modal-close]").click(function() {
+        $("[data-modal]").hide();
+    });
+
+    function page__head__pattern() {
+        var height = $(".page__head__pattern").height();
+        $(".page__head__pattern").css("width", height * 2.93);
+        $(".page__head__pattern").css("opacity", "1");
+    }
+
+    page__head__pattern();
+
+    $(window).resize(function() {
+        page__head__pattern();
+    });
+
+    $(".page__textblock__slider").owlCarousel({
+        items: 1,
+        dots: true
+    });
+
+    $(".page__textblock__slider__item img").each(function(i, el) {
+        console.log(i, el);
+        $(".page__textblock__slider .owl-dot")
+            .eq(i)
+            .html("<img src='" + $(el).attr("src") + "' alt=''>");
     });
 });

@@ -1,0 +1,153 @@
+{% set title = 'Центр сертификации | Контакты' %} {% extends
+'layouts/_main.html' %} {% block content %}
+<!-- page__head -->
+<div class="page__head" style="background-image: url(img/contacts__bg.jpg);">
+    <div class="page__head__pattern"></div>
+    <div class="container">
+        <ul class="bredcrumbs">
+            <li><a href="/">Главная</a></li>
+            <li class="bredcrumbs__separator">/</li>
+            <li><a href="/">Контакты</a></li>
+        </ul>
+        <h1 class="page__head__title">
+            Контакты
+        </h1>
+        <div class="page__head__btnblock">
+            <button class="btn__noborderradius">Сохранить в закладки</button>
+            <div class="page__head__social">
+                <a href="/">
+                    <img src="img/page__head__fb.png" alt="" />
+                </a>
+                <a href="/">
+                    <img src="img/page__head__ok.png" alt="" />
+                </a>
+                <a href="/">
+                    <img src="img/page__head__vk.png" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END page__head -->
+
+<!-- contacts__mapblock -->
+<div class="contacts__mapblock">
+    <div class="container">
+        <div class="contacts__mapblock__map" id="contacts__map"></div>
+        <div class="contacts__mapblock__contacts">
+            <div class="contacts__mapblock__contacts__city">КАЗАНЬ</div>
+            <ul class="contacts__mapblock__contacts__list">
+                <li>"Альянс ар групп"</li>
+                <li>E-mail: mng-2@alliance-ar.ru</li>
+                <li>Адрес: 420140, РТ, г. Казань, ул.</li>
+                <li>Юлиуса Фучика, д. 90А, оф. 827, 828</li>
+            </ul>
+            <ul class="contacts__mapblock__contacts__list">
+                <li class="contacts__mapblock__contacts__list__item__strong">
+                    <img src="img/contacts__icon__phone.png" alt="" /> "Альянс
+                    ар групп"
+                </li>
+                <li class="contacts__mapblock__contacts__list__item__strong">
+                    <img src="img/contacts__icon__email.png" alt="" /> E-mail:
+                    mng-2@alliance-ar.ru
+                </li>
+                <li class="contacts__mapblock__contacts__list__item__strong">
+                    <img src="img/contacts__icon__clock.png" alt="" />Адрес:
+                    420140, РТ, г. Казань, ул.
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--END contacts__mapblock -->
+
+<!-- contacts__requisites -->
+<div class="contacts__requisites">
+    <div class="container">
+        <div class="contacts__requisites__title">реквезиты компании</div>
+        <div class="contacts__requisites__content">
+            <ul class="contacts__requisites__content__list">
+                <li>
+                    <span class="green">Полное наименование организации:</span>
+                </li>
+                <li>
+                    Общество с ограниченной ответственностью «АЛЬЯНС АР ГРУПП»
+                </li>
+                <li>
+                    <span class="green">Сокращенное наименование:</span>
+                </li>
+                <li>ООО «АЛЬЯНС АР ГРУПП»</li>
+                <li><span class="green">Юридический адрес:</span></li>
+                <li>420111, РТ, г. Казань, ул. Островского 35а, кв. 515</li>
+                <li><span class="green">Фактический адрес:</span></li>
+                <li>
+                    420140, РТ, г. Казань, ул. Юлиуса Фучика, д. 90А, оф. 827,
+                    828
+                </li>
+                <li><span class="green">ИНН</span> 1655280054</li>
+                <li><span class="green">КПП</span> 165501001</li>
+                <li><span class="green">ОГРН</span> 1131690077166</li>
+                <li><span class="green">Генеральный директор:</span></li>
+                <li>
+                    Рахимов Ленар Ильдарович, действующий на основании Устава
+                </li>
+                <li><span class="green">Телефон:</span></li>
+                <li>+7 (905) 3-105-105, 2409-904</li>
+                <li><span class="green">Р/с</span> 40702810310000108371</li>
+                <li><span class="green">К/с</span> 30101810145250000974</li>
+                <li>
+                    <span class="green">Название банка</span> АО «ТИНЬКОФФ БАНК»
+                </li>
+                <li><span class="green">БИК</span> 044525974</li>
+                <li><span class="green">ИНН</span> банка 7710140679</li>
+                <li>
+                    <span class="green">Юридический адрес</span> Москва, 123060,
+                    1-й Волоколамский проезд, д. 10, стр. 1
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--END contacts__requisites -->
+
+<!-- form -->
+<div class="formblock">
+    <div class="container">
+        <h2 class="section-title">Впервые оформляете сертификат?</h2>
+        <div class="formblock__main">
+            <div class="page__formblock__main__img__wrapper nop">
+                <img
+                    src="img/formblock_form.png"
+                    alt=""
+                    class="formblock__main__img"
+                />
+            </div>
+            <div class="formblock__main__title">
+                Оставьте заявку, на сертификат или конусультацию
+            </div>
+            <div class="formblock__main__desc">
+                и наш менеджер свяжется с Вами проконсультирует и поможет
+                определиться фс выбором сертификата
+            </div>
+            <form action="/" class="formblock__main__form">
+                <div class="formblock__main__form__item">
+                    <label for="">Введите Ваше имя:</label>
+                    <input type="text" placeholder="Александр Иванов" />
+                </div>
+                <div class="formblock__main__form__item">
+                    <label for="">Введите Ваш номер телефона:</label>
+                    <input type="text" placeholder="+7 999 876-54-32" />
+                </div>
+                <div class="formblock__main__form__btn">
+                    <button class="btn__noborderradius">отправить</button>
+                </div>
+            </form>
+            <div class="formblock__main__politics">
+                Нажимая на кнопку “отправить” Вы принимаете условия
+                <a href="">политики конфинденциальности</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END form -->
+{% endblock %}
