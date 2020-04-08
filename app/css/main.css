@@ -164,6 +164,7 @@ button {
 .head__logo {
   line-height: 0;
   display: block;
+  display: none;
 }
 .navbar__hamburger {
   display: -webkit-box;
@@ -171,6 +172,7 @@ button {
   -webkit-box-align: center;
           align-items: center;
   padding: 10px 20px;
+  display: none;
 }
 .navbar__hamburger * {
   color: white;

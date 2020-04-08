@@ -395,4 +395,11 @@
   .sertificates .section-title {
     text-align: left;
   }
+  .head__logo {
+    display: block;
+  }
+  .navbar__hamburger {
+    display: -webkit-box;
+    display: flex;
+  }
 }
