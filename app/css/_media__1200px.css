@@ -1,0 +1,8 @@
+@media screen and (max-width: 1200px) {
+  .reviews__slider {
+    max-width: 85%;
+  }
+  .navbar__links a {
+    padding: 28px 10px;
+  }
+}

@@ -3,16 +3,21 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Центр сертификации | Контакты</title>
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
 </head>
 
 <body>
     <!-- head -->
     <div class="head">
         <div class="container">
+            <a href="/" class="head__logo">
+                <img src="img/head__logo.png" alt="" />
+            </a>
             <div class="head__city">
                 <div class="head__city__label">Город:</div>
                 <a class="head__city__name" href="/">Казань</a>
@@ -27,6 +32,10 @@
     <!-- navbar -->
     <div class="navbar">
         <div class="container">
+            <div class="navbar__hamburger" data-click-modal-open="nav">
+                <img src="img/hamburger.svg" alt="" />
+                <div class="navbar__hamburger__text">Меню</div>
+            </div>
             <a href="/" class="navbar__logo">
                 <img src="img/logo.png" alt="" />
             </a>
@@ -161,6 +170,51 @@
         </div>
     </div>
     <!--END modals -->
+    <!-- mobile__nav -->
+    <div class="mobile__nav__wrapper" data-modal="nav">
+        <div class="mobile__nav">
+            <div class="mobile__nav__close" data-click-modal-close="nav">
+                <img src="img/mobile__nav__close.png" alt="" />
+            </div>
+            <a href="/" class="mobile__nav__logo">
+                <img src="img/mobile__nav__logo.png" alt="" />
+            </a>
+            <ul class="mobile__nav__links">
+                <li><a href="/">Сертификация</a></li>
+                <li><a href="/">Штрих кодирование</a></li>
+                <li><a href="/">Охрана труда</a></li>
+                <li><a href="/">Лаборатория</a></li>
+                <li><a href="/">О нас</a></li>
+                <li><a href="/">Контакты</a></li>
+            </ul>
+            <div class="mobile__nav__contacts">
+                <!-- mobile__nav__contact -->
+                <div class="mobile__nav__contact">
+                    <img src="img/mobile__nav__loc.png" alt="" />
+                    <div class="mobile__nav__contact__title"> г. Казань,ул. Юлиуса Фучика, <br /> 90А эт. 8, каб. 827 </div>
+                </div>
+                <!--END mobile__nav__contact -->
+                <!-- mobile__nav__contact -->
+                <div class="mobile__nav__contact">
+                    <img src="img/mobile__nav__email.png" alt="" />
+                    <div class="mobile__nav__contact__title"> mng-2@alliance-ar.ru </div>
+                </div>
+                <!--END mobile__nav__contact -->
+            </div>
+            <div class="mobile__nav__socials">
+                <a href="" class="mobile__nav__social">
+                    <img src="img/mobile__nav__vk.png" alt="" />
+                </a>
+                <a href="" class="mobile__nav__social">
+                    <img src="img/mobile__nav__ig.png" alt="" />
+                </a>
+                <a href="" class="mobile__nav__social">
+                    <img src="img/mobile__nav__youtube.png" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--END mobile__nav -->
     <script src="js/jquery.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>

@@ -1,0 +1,5 @@
+@media screen and (max-width: 1250px) {
+  .navbar__links a {
+    padding: 28px 20px;
+  }
+}

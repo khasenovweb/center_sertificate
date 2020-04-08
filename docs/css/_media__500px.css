@@ -1,0 +1,89 @@
+@media screen and (max-width: 500px) {
+  .hero__img img {
+    width: 80%;
+  }
+  .contacts__items {
+    grid-template-columns: 100%;
+  }
+  .about__as__logos {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+  .about__as__logos img {
+    height: 20%;
+    width: auto;
+  }
+  .plus__items {
+    grid-template-columns: 100%;
+  }
+  .prices__items {
+    grid-template-columns: 100%;
+  }
+  .modal__title {
+    font-size: 20px;
+  }
+  .modal__desc {
+    margin-top: 7px;
+  }
+  .modal {
+    padding: 20px;
+    width: 85%;
+  }
+  .contacts__item {
+    padding: 25px 16px;
+  }
+  .reviews__slider .owl-nav button.owl-next {
+    right: -20px;
+  }
+  .reviews__slider .owl-nav button.owl-prev {
+    left: -20px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .formblock__main__title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .formblock__main__desc {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .page__textblock img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .search__form {
+    grid-template-columns: 65% 35%;
+  }
+  .search__results__title {
+    font-size: 18px;
+  }
+  .search__results__item__title {
+    font-size: 16px;
+  }
+  .search__results__item__desc {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+  }
+  .page__contentblock__ol li {
+    font-size: 12px;
+  }
+  .page__contentblock__ol li:before {
+    font-size: 24px;
+    top: -6px;
+  }
+  .page__contentblock__p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .page__contentblock__ul li {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
