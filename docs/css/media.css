@@ -415,6 +415,10 @@
     display: -webkit-box;
     display: flex;
   }
+  .footer__phoneblock .btn__small__border {
+    font-size: 10px;
+    padding: 10px 12px;
+  }
 }
 @media screen and (max-width: 500px) {
   .hero__img img {
