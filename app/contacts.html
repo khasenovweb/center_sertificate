@@ -7,6 +7,7 @@
     <title>Центр сертификации | Контакты</title>
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
 </head>
@@ -64,7 +65,6 @@
             </ul>
             <h1 class="page__head__title"> Контакты </h1>
             <div class="page__head__btnblock">
-                <button class="btn__noborderradius">Сохранить в закладки</button>
                 <div class="page__head__social">
                     <a href="/">
                         <img src="img/page__head__fb.png" alt="" />
@@ -139,6 +139,7 @@
                         <span class="green">Юридический адрес</span> Москва, 123060, 1-й Волоколамский проезд, д. 10, стр. 1 </li>
                 </ul>
             </div>
+            <a href="" class="btn__noborderradius">Скачать реквизиты</a>
         </div>
     </div>
     <!--END contacts__requisites -->
@@ -243,11 +244,11 @@
             <form class="form" action="">
                 <div class="form__inputgroup">
                     <label for="">Введите Ваше имя:</label>
-                    <input type="text" placeholder="Александр Иванов" />
+                    <input data-mask="fio" type="text" placeholder="Александр Иванов" />
                 </div>
                 <div class="form__inputgroup">
                     <label for="">Введите Ваш номер телефона:</label>
-                    <input type="text" placeholder="+7 999 876-54-32" />
+                    <input data-mask="phone" type="text" placeholder="+7 999 876-54-32" />
                 </div>
                 <div class="form__politics"> Нажимая на кнопку "отправить" Вы принимаете условия <a href="">политики конфинденциальности</a>
                 </div>
@@ -262,11 +263,11 @@
             <form class="form" action="">
                 <div class="form__inputgroup">
                     <label for="">Введите Ваше имя:</label>
-                    <input type="text" placeholder="Александр Иванов" />
+                    <input data-mask="fio" type="text" placeholder="Александр Иванов" />
                 </div>
                 <div class="form__inputgroup">
                     <label for="">Введите Ваш номер телефона:</label>
-                    <input type="text" placeholder="+7 999 876-54-32" />
+                    <input data-mask="phone" type="text" placeholder="+7 999 876-54-32" />
                 </div>
                 <div class="form__politics"> Нажимая на кнопку "отправить" Вы принимаете условия <a href="">политики конфинденциальности</a>
                 </div>
@@ -324,6 +325,8 @@
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
