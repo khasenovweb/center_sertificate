@@ -6,12 +6,9 @@
     grid-template-columns: 100%;
   }
   .about__as__logos {
-    display: -webkit-box;
     display: flex;
-    -webkit-box-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .about__as__logos img {
     height: 20%;

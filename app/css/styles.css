@@ -1,0 +1,103 @@
+.page__contentblock p,
+.page__textblock p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #423e3e;
+}
+.page__contentblock h1,
+.page__textblock h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 48px;
+  color: #2a2a2a;
+}
+.page__contentblock h2,
+.page__textblock h2 {
+  font-size: 36px;
+  line-height: 40px;
+  color: #398c6d;
+  margin-top: 20px;
+}
+.page__contentblock h3,
+.page__textblock h3 {
+  font-size: 30px;
+  line-height: 40px;
+  margin-top: 20px;
+  color: #2a2a2a;
+}
+.page__contentblock h4,
+.page__textblock h4 {
+  font-size: 26px;
+  line-height: 40px;
+  margin-top: 20px;
+  color: #398c6d;
+}
+.page__contentblock h5,
+.page__textblock h5 {
+  font-size: 20px;
+  line-height: 40px;
+  margin-top: 20px;
+  color: #2a2a2a;
+}
+.page__contentblock h6,
+.page__textblock h6 {
+  font-size: 16px;
+  line-height: 40px;
+  margin-top: 20px;
+  color: #398c6d;
+}
+.page__contentblock ol,
+.page__textblock ol {
+  counter-reset: li;
+  margin-top: 20px;
+}
+.page__contentblock ol li,
+.page__textblock ol li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 16px;
+  line-height: 26px;
+  font-weight: 300;
+}
+.page__contentblock ol li:before,
+.page__textblock ol li:before {
+  content: counter(li);
+  counter-increment: li;
+  color: #398c6d;
+  font-weight: 700;
+  position: absolute;
+  left: -2px;
+  top: 0;
+}
+.page__contentblock ul,
+.page__textblock ul {
+  margin-top: 20px;
+  list-style-type: none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 300;
+}
+.page__contentblock ul li,
+.page__textblock ul li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 16px;
+}
+.page__contentblock ul li:before,
+.page__textblock ul li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  background-color: #398c6d;
+  border-radius: 100%;
+}
+.page__contentblock a,
+.page__textblock a {
+  color: #398c6d;
+  text-decoration: underline;
+}

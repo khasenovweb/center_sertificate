@@ -247,11 +247,8 @@
     text-align: center;
   }
   .footer__top {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .footer__list * {
     text-align: center;
@@ -274,34 +271,27 @@
             transform: translateX(-50%);
   }
   .footer__logo {
-    -webkit-box-ordinal-group: 2;
-            order: 1;
+    order: 1;
     margin-bottom: 20px;
   }
   .footer__phoneblock {
-    -webkit-box-ordinal-group: 3;
-            order: 2;
+    order: 2;
   }
   .footer__list {
-    -webkit-box-ordinal-group: 4;
-            order: 3;
+    order: 3;
     margin-bottom: 20px;
   }
   .footer__phoneblock {
     margin-bottom: 20px;
   }
   .footer__bottom {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
   }
   .footer__bottom__nav {
     margin-bottom: 20px;
   }
   .footer__bottom__nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
   }
   .footer__bottom__nav li {
     margin-right: 0;
@@ -314,8 +304,7 @@
   }
   .navbar .container {
     padding: 0;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .btn__small__border {
     font-size: 8px;
@@ -330,11 +319,8 @@
     font-size: 22px;
   }
   .page__head__btnblock {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .page__head__social a {
     margin-right: 20px;
@@ -377,12 +363,10 @@
   }
   .contacts__mapblock__map {
     height: 300px;
-    -webkit-box-ordinal-group: 3;
-            order: 2;
+    order: 2;
   }
   .contacts__mapblock__contacts {
-    -webkit-box-ordinal-group: 2;
-            order: 1;
+    order: 1;
     padding: 20px;
   }
   .contacts__requisites__title {
@@ -408,7 +392,6 @@
     display: block;
   }
   .navbar__hamburger {
-    display: -webkit-box;
     display: flex;
   }
   .footer__phoneblock .btn__small__border {
